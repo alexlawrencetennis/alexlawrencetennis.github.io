@@ -1,13 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" role="img" aria-labelledby="title desc">
   <title id="title">Alex Lawrence Tennis Coaching</title>
-  <desc id="desc">AL monogram with a tennis ball arc, Alex Lawrence name and Tennis Coaching descriptor.</desc>
-  <rect width="800" height="520" fill="#f4f0e4"/>
-  <g fill="#314c40" stroke="#314c40">
-    <text x="400" y="255" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="238" font-weight="400" letter-spacing="-28">AL</text>
-    <path d="M190 268 C300 175, 465 150, 594 174" fill="none" stroke-width="7" stroke-linecap="round"/>
-    <circle cx="625" cy="170" r="30" fill="#314c40" stroke="none"/>
-    <path d="M604 156 C620 163, 629 177, 635 196 M616 143 C631 149, 641 160, 646 176" fill="none" stroke="#f4f0e4" stroke-width="5"/>
+  <desc id="desc">Elegant AL monogram with a tennis ball trajectory and Tennis Coaching text.</desc>
+  <g fill="#314c40">
+    <text x="123" y="205" font-family="Georgia, 'Times New Roman', serif" font-size="190" font-weight="400">A</text>
+    <text x="220" y="225" font-family="Georgia, 'Times New Roman', serif" font-size="205" font-weight="400">L</text>
   </g>
-  <text x="400" y="370" text-anchor="middle" fill="#314c40" font-family="Georgia, 'Times New Roman', serif" font-size="54" letter-spacing="10">ALEX LAWRENCE</text>
-  <text x="400" y="438" text-anchor="middle" fill="#314c40" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" letter-spacing="12">TENNIS COACHING</text>
+  <path d="M118 185 C205 112, 300 95, 395 118" fill="none" stroke="#314c40" stroke-width="5.5" stroke-linecap="round"/>
+  <circle cx="418" cy="116" r="21" fill="#314c40"/>
+  <path d="M404 104 C414 109, 422 120, 425 132 M413 96 C424 101, 432 108, 437 118" fill="none" stroke="#f4f0e4" stroke-width="4"/>
+  <text x="260" y="286" text-anchor="middle" fill="#314c40" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="500" letter-spacing="12">TENNIS COACHING</text>
 </svg>
