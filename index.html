@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Beginners tennis coaching with Alex Lawrence. Relaxed one-hour lessons for adults, one-to-one or for two people.">
+  <title>Alex Lawrence | Beginners Tennis Coaching</title>
+  <style>
+    :root{
+      --cream:#f4f0e4;
+      --green:#314c40;
+      --green-dark:#243a31;
+      --green-soft:#dfe6df;
+      --ink:#26342e;
+      --line:rgba(49,76,64,.22);
+      --white:#fffdf7;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--cream);
+      color:var(--ink);
+      font-family:Arial,Helvetica,sans-serif;
+      line-height:1.5;
+    }
+    a{color:inherit}
+    .wrap{width:min(1120px,calc(100% - 44px));margin:auto}
+    header{
+      padding:24px 0 18px;
+      border-bottom:1px solid var(--line);
+    }
+    .brand{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(1.7rem,4vw,2.5rem);
+      color:var(--green);
+      margin:0 0 14px;
+      font-weight:500;
+    }
+    nav{
+      display:flex;
+      gap:clamp(22px,5vw,60px);
+      flex-wrap:wrap;
+    }
+    nav a{
+      font-size:.96rem;
+      font-weight:700;
+      text-decoration:underline;
+      text-decoration-thickness:1.5px;
+      text-underline-offset:5px;
+      padding:7px 0;
+    }
+    nav a:hover{color:var(--green)}
+    main section{padding:74px 0;border-bottom:1px solid var(--line)}
+    .eyebrow{
+      text-transform:uppercase;
+      letter-spacing:.2em;
+      font-size:.72rem;
+      font-weight:700;
+      margin:0 0 18px;
+      color:var(--green);
+    }
+    h1,h2,h3{
+      font-family:Georgia,"Times New Roman",serif;
+      font-weight:500;
+      color:var(--green);
+      margin-top:0;
+      line-height:1.02;
+    }
+    h1{font-size:clamp(3.3rem,10vw,7.3rem);max-width:850px;margin-bottom:18px}
+    h2{font-size:clamp(2.4rem,7vw,5rem);max-width:850px;margin-bottom:24px}
+    h3{font-size:1.65rem;margin-bottom:8px}
+    .hero{padding-top:82px}
+    .hero-sub{
+      font-size:clamp(1rem,2.2vw,1.25rem);
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      color:var(--green);
+      font-weight:700;
+      margin:0 0 42px;
+    }
+    .lead{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(1.35rem,3vw,2rem);
+      max-width:760px;
+      margin:0;
+    }
+    .lead em{font-style:italic}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:26px;
+      margin-top:34px;
+    }
+    .card{
+      border:1px solid var(--line);
+      padding:28px;
+      min-height:220px;
+      background:rgba(255,255,255,.12);
+    }
+    .price{
+      font-family:Georgia,"Times New Roman",serif;
+      color:var(--green);
+      font-size:3rem;
+      line-height:1;
+      margin:24px 0 8px;
+    }
+    .small{font-size:.94rem;color:#536159}
+    .dark{
+      background:var(--green);
+      color:var(--white);
+    }
+    .dark h2,.dark h3,.dark .eyebrow{color:var(--white)}
+    .button{
+      display:inline-block;
+      margin-top:22px;
+      padding:13px 18px;
+      border:1px solid currentColor;
+      text-decoration:none;
+      font-weight:700;
+    }
+    .button:hover{background:var(--green-dark);color:var(--white)}
+    .dark .button:hover{background:var(--white);color:var(--green)}
+    .faq{
+      display:grid;
+      grid-template-columns:1fr 1.4fr;
+      gap:32px;
+      padding:25px 0;
+      border-top:1px solid var(--line);
+    }
+    .faq:last-child{border-bottom:1px solid var(--line)}
+    .faq h3{font-size:1.25rem}
+    .faq p{margin:0}
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:28px;
+      align-items:start;
+    }
+    .contact-link{
+      display:block;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(1.25rem,3.2vw,2rem);
+      line-height:1.2;
+      text-decoration:underline;
+      text-decoration-thickness:1px;
+      text-underline-offset:6px;
+      overflow-wrap:anywhere;
+      margin:0 0 22px;
+    }
+    footer{
+      padding:38px 0 46px;
+    }
+    footer p{
+      font-family:Georgia,"Times New Roman",serif;
+      font-style:italic;
+      font-size:1.3rem;
+      color:var(--green);
+      margin:0;
+    }
+    @media(max-width:720px){
+      .wrap{width:min(100% - 32px,1120px)}
+      main section{padding:58px 0}
+      .hero{padding-top:58px}
+      .grid,.contact-grid,.faq{grid-template-columns:1fr}
+      .faq{gap:8px}
+      nav{justify-content:space-between;gap:10px 18px}
+      nav a{font-size:.9rem}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="brand">Alex Lawrence</p>
+      <nav aria-label="Main navigation">
+        <a href="#lessons">Lessons &amp; prices</a>
+        <a href="#courts">The courts</a>
+        <a href="#contact">Get in touch ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Beginners tennis coaching</p>
+        <h1>Alex Lawrence</h1>
+        <p class="hero-sub">Beginners tennis coaching</p>
+        <p class="lead">Every tennis journey starts with a <em>first step.</em></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">For adult beginners</p>
+        <h2>Learn at your pace.</h2>
+        <p class="lead">Relaxed, practical coaching for adults who are new to tennis or want to build confidence with the basics. Come on your own or learn with someone else.</p>
+      </div>
+    </section>
+
+    <section id="lessons">
+      <div class="wrap">
+        <p class="eyebrow">Lessons &amp; prices</p>
+        <h2>Simple one-hour sessions.</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>One-to-one</h3>
+            <p>Individual coaching shaped around you, with plenty of time to practise and ask questions.</p>
+            <p class="price">£26</p>
+            <p class="small">1 hour · court hire included</p>
+          </article>
+          <article class="card">
+            <h3>Learn together</h3>
+            <p>Share a lesson with a partner or friend and learn together at a comfortable pace.</p>
+            <p class="price">£35</p>
+            <p class="small">1 hour · total for two people · court hire included</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark">
+      <div class="wrap">
+        <p class="eyebrow">Complimentary taster lesson</p>
+        <h2>Meet your coach.<br><em>Give tennis a try.</em></h2>
+        <p class="lead">A relaxed introduction to tennis and a chance to meet Alex. Get a feel for the coaching before arranging regular lessons.</p>
+        <a class="button" href="mailto:tennis.alawrence@gmail.com?subject=Taster%20lesson%20enquiry">Enquire about a taster lesson</a>
+      </div>
+    </section>
+
+    <section id="courts">
+      <div class="wrap">
+        <p class="eyebrow">The courts</p>
+        <h2>Astley Place Tennis Courts.</h2>
+        <p class="lead">Lessons take place at the new tennis courts at Astley Place. The venue name may change, but the location will remain the same.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">FAQs</p>
+        <h2>A few <em>useful details.</em></h2>
+
+        <div class="faq">
+          <h3>Who are the lessons for?</h3>
+          <p>They are aimed mainly at adult beginners: whether you are completely new to tennis or want to build confidence with the fundamentals.</p>
+        </div>
+        <div class="faq">
+          <h3>How long is a lesson?</h3>
+          <p>Each regular lesson lasts one hour.</p>
+        </div>
+        <div class="faq">
+          <h3>Can I learn with someone else?</h3>
+          <p>Yes. Shared lessons are available for two people at £35 total for the hour.</p>
+        </div>
+        <div class="faq">
+          <h3>What if I don’t have a racket?</h3>
+          <p>Alex can provide a racket if you need one. Just mention it when you arrange your lesson.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="eyebrow">Get in touch</p>
+          <h2>Ready to get on court?</h2>
+        </div>
+        <div>
+          <p class="eyebrow">Email Alex</p>
+          <a class="contact-link" href="mailto:tennis.alawrence@gmail.com">tennis.alawrence@gmail.com ↗</a>
+          <p class="eyebrow">Call or text</p>
+          <a class="contact-link" href="tel:+447933071733">07933 071733 ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Learn. Play. Enjoy the game.</p>
+    </div>
+  </footer>
+</body>
+</html>
