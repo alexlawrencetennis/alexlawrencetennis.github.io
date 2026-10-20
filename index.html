@@ -42,11 +42,6 @@
       align-items:center;
       gap:44px;
     }
-    .brand-logo{
-      display:block;
-      width:205px;
-      height:auto;
-    }
     .header-logo{
       display:flex;
       justify-content:center;
@@ -54,9 +49,27 @@
     }
     .brand-lockup{
       display:inline-flex;
+      flex-direction:column;
       align-items:center;
       justify-content:center;
       text-decoration:none;
+      color:var(--green);
+      line-height:1;
+      min-width:220px;
+    }
+    .brand-name{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:1.08rem;
+      letter-spacing:.16em;
+      white-space:nowrap;
+    }
+    .brand-subtitle{
+      margin-top:8px;
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:.58rem;
+      font-weight:700;
+      letter-spacing:.28em;
+      white-space:nowrap;
     }
     .nav-left,.nav-right{
       display:grid;
@@ -370,7 +383,9 @@
       .grid,.contact-grid,.map-grid{grid-template-columns:1fr}
       .header-inner{width:min(100% - 32px,1120px);grid-template-columns:1fr;min-height:auto;padding:18px 0;gap:12px}
       .header-logo{grid-row:1}
-      .brand-logo{width:150px}
+      .brand-lockup{min-width:0}
+      .brand-name{font-size:1rem}
+      .brand-subtitle{font-size:.54rem}
       .nav-left,.nav-right{display:flex;justify-content:center;gap:18px;flex-wrap:wrap}
       .nav-left a,.nav-left a:nth-child(2),.nav-left a:nth-child(3),
       .nav-right a:first-child,.nav-right a:nth-child(2),.nav-right a:last-child{text-align:center}
@@ -406,7 +421,8 @@
       </nav>
       <div class="header-logo">
         <a class="brand-lockup" href="#" aria-label="Alex Lawrence home">
-          <img class="brand-logo" src="alex-lawrence-logo-final.webp" alt="Alex Lawrence Tennis Coaching logo">
+          <span class="brand-name">ALEX LAWRENCE</span>
+          <span class="brand-subtitle">TENNIS COACHING</span>
         </a>
       </div>
       <nav class="nav-right" aria-label="Secondary navigation">
