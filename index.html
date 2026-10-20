@@ -122,15 +122,31 @@
     .button:hover{background:var(--green-dark);color:var(--white)}
     .dark .button:hover{background:var(--white);color:var(--green)}
     .faq{
-      display:grid;
-      grid-template-columns:1fr 1.4fr;
-      gap:32px;
-      padding:25px 0;
       border-top:1px solid var(--line);
     }
     .faq:last-child{border-bottom:1px solid var(--line)}
-    .faq h3{font-size:1.25rem}
-    .faq p{margin:0}
+    .faq summary{
+      cursor:pointer;
+      list-style:none;
+      position:relative;
+      padding:22px 42px 22px 0;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:1.25rem;
+      color:var(--green);
+    }
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{
+      content:"+";
+      position:absolute;
+      right:0;
+      top:50%;
+      transform:translateY(-50%);
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:1.5rem;
+      font-weight:400;
+    }
+    .faq[open] summary::after{content:"−"}
+    .faq p{margin:0;padding:0 42px 22px 0;max-width:760px}
     .contact-grid{
       display:grid;
       grid-template-columns:1fr 1fr;
@@ -162,8 +178,7 @@
       .wrap{width:min(100% - 32px,1120px)}
       main section{padding:58px 0}
       .hero{padding-top:58px}
-      .grid,.contact-grid,.faq{grid-template-columns:1fr}
-      .faq{gap:8px}
+      .grid,.contact-grid{grid-template-columns:1fr}
       nav{justify-content:space-between;gap:10px 18px}
       nav a{font-size:.9rem}
     }
@@ -184,7 +199,6 @@
   <main>
     <section class="hero">
       <div class="wrap">
-        <p class="eyebrow">Beginners tennis coaching</p>
         <h1>Alex Lawrence</h1>
         <p class="hero-sub">Beginners tennis coaching</p>
         <p class="lead">Every tennis journey starts with a <em>first step.</em></p>
@@ -233,7 +247,7 @@
       <div class="wrap">
         <p class="eyebrow">The courts</p>
         <h2>Astley Place Tennis Courts.</h2>
-        <p class="lead">Lessons take place at the new tennis courts at Astley Place. The venue name may change, but the location will remain the same.</p>
+        <a class="button" href="https://www.google.com/maps/search/?api=1&query=Astley+Place+Tennis+Courts" target="_blank" rel="noopener noreferrer">View on Google Maps ↗</a>
       </div>
     </section>
 
@@ -242,22 +256,22 @@
         <p class="eyebrow">FAQs</p>
         <h2>A few <em>useful details.</em></h2>
 
-        <div class="faq">
-          <h3>Who are the lessons for?</h3>
+        <details class="faq">
+          <summary>Who are the lessons for?</summary>
           <p>They are aimed mainly at adult beginners: whether you are completely new to tennis or want to build confidence with the fundamentals.</p>
-        </div>
-        <div class="faq">
-          <h3>How long is a lesson?</h3>
+        </details>
+        <details class="faq">
+          <summary>How long is a lesson?</summary>
           <p>Each regular lesson lasts one hour.</p>
-        </div>
-        <div class="faq">
-          <h3>Can I learn with someone else?</h3>
+        </details>
+        <details class="faq">
+          <summary>Can I learn with someone else?</summary>
           <p>Yes. Shared lessons are available for two people at £35 total for the hour.</p>
-        </div>
-        <div class="faq">
-          <h3>What if I don’t have a racket?</h3>
+        </details>
+        <details class="faq">
+          <summary>What if I don’t have a racket?</summary>
           <p>Alex can provide a racket if you need one. Just mention it when you arrange your lesson.</p>
-        </div>
+        </details>
       </div>
     </section>
 
