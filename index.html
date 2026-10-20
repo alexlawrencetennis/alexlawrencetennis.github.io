@@ -30,12 +30,11 @@
       padding:24px 0 18px;
       border-bottom:1px solid var(--line);
     }
-    .brand{
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:clamp(1.7rem,4vw,2.5rem);
-      color:var(--green);
-      margin:0 0 14px;
-      font-weight:500;
+    .brand-logo{
+      display:block;
+      width:clamp(150px,22vw,220px);
+      height:auto;
+      margin:0 0 16px;
     }
     nav{
       display:flex;
@@ -258,7 +257,7 @@
 <body>
   <header>
     <div class="wrap">
-      <p class="brand">Alex Lawrence</p>
+      <a href="#" aria-label="Alex Lawrence home"><img class="brand-logo" src="alex-lawrence-logo.webp" alt="Alex Lawrence Beginners Tennis Coaching logo"></a>
       <nav aria-label="Main navigation">
         <a href="#lessons">Lessons &amp; prices</a>
         <a href="#courts">The courts</a>
