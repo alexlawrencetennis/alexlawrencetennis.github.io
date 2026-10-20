@@ -259,6 +259,19 @@
       line-height:1.65;
       color:var(--ink);
     }
+    #contact{
+      background:var(--green);
+      color:var(--white);
+      border-bottom:0;
+    }
+    #contact .eyebrow,
+    #contact h2,
+    #contact .contact-link{
+      color:var(--white);
+    }
+    #contact .contact-link{
+      text-decoration-color:rgba(255,253,247,.65);
+    }
     .contact-grid{
       display:grid;
       grid-template-columns:1fr 1fr;
@@ -319,12 +332,14 @@
     }
     footer{
       padding:38px 0 46px;
+      background:var(--green);
+      border-top:1px solid rgba(255,253,247,.20);
     }
     footer p{
       font-family:Georgia,"Times New Roman",serif;
       font-style:italic;
       font-size:1.3rem;
-      color:var(--green);
+      color:var(--white);
       margin:0;
     }
     @media(max-width:720px){
