@@ -47,7 +47,25 @@
       width:150px;
       height:auto;
     }
-    .header-logo{display:flex;justify-content:center}
+    .header-logo{
+      display:flex;
+      justify-content:center;
+      text-align:center;
+    }
+    .brand-lockup{
+      display:inline-flex;
+      flex-direction:column;
+      align-items:center;
+      text-decoration:none;
+    }
+    .brand-tagline{
+      margin-top:-4px;
+      font-size:.58rem;
+      letter-spacing:.34em;
+      text-transform:uppercase;
+      font-weight:600;
+      color:var(--green);
+    }
     .nav-left,.nav-right{
       display:flex;
       align-items:center;
@@ -339,7 +357,10 @@
         <a href="#lessons">Lessons</a>
       </nav>
       <div class="header-logo">
-        <a href="#" aria-label="Alex Lawrence home"><img class="brand-logo" src="alex-lawrence-brand-logo.webp" alt="Alex Lawrence Tennis Coaching logo"></a>
+        <a class="brand-lockup" href="#" aria-label="Alex Lawrence home">
+          <img class="brand-logo" src="alex-lawrence-logo-transparent.webp" alt="Alex Lawrence logo">
+          <span class="brand-tagline">Tennis Coaching</span>
+        </a>
       </div>
       <nav class="nav-right" aria-label="Secondary navigation">
         <a href="#courts">Tennis courts</a>
