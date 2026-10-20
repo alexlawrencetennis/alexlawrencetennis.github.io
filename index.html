@@ -288,9 +288,12 @@
     }
     .contact-grid{
       display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:28px;
+      grid-template-columns:minmax(0,1fr) minmax(0,.82fr);
+      gap:72px;
       align-items:start;
+    }
+    #contact .contact-grid > div:last-child{
+      padding-left:clamp(24px,4vw,72px);
     }
     .map-grid{
       display:grid;
@@ -388,7 +391,9 @@
       .taster-copy{width:calc(100% - 32px);margin:0 auto;padding:54px 0 280px}
       .hero-line{white-space:normal}
       .taster-copy h2{font-size:clamp(3rem,13vw,4.8rem)}
-    }
+    
+      #contact .contact-grid > div:last-child{padding-left:0}
+}
   </style>
 </head>
 <body>
