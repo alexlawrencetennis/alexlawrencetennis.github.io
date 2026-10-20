@@ -123,19 +123,28 @@
     }
     .taster-hero{
       padding:0;
-      background:var(--green);
       color:var(--white);
       border-bottom:0;
+      background:
+        linear-gradient(90deg,
+          rgba(49,76,64,1) 0%,
+          rgba(49,76,64,1) 36%,
+          rgba(49,76,64,.94) 48%,
+          rgba(49,76,64,.72) 60%,
+          rgba(49,76,64,.28) 76%,
+          rgba(49,76,64,0) 100%),
+        url("hero-court.jpg") 78% 58%/cover no-repeat;
     }
     .taster-layout{
-      display:grid;
-      grid-template-columns:1.05fr .95fr;
-      min-height:520px;
+      min-height:560px;
+      width:min(1180px,calc(100% - 44px));
+      margin:auto;
+      display:flex;
+      align-items:center;
     }
     .taster-copy{
-      padding:72px max(44px,calc((100vw - 1180px)/2)) 64px max(44px,calc((100vw - 1180px)/2));
-      padding-right:54px;
-      align-self:center;
+      width:min(690px,58%);
+      padding:68px 0 62px;
     }
     .taster-copy h2{
       color:var(--white);
@@ -150,12 +159,7 @@
       line-height:1.55;
       max-width:650px;
     }
-    .taster-visual{
-      background:
-        linear-gradient(90deg,var(--green) 0%,rgba(49,76,64,.58) 18%,rgba(49,76,64,.08) 48%,rgba(49,76,64,0) 100%),
-        url("hero-court.jpg") center/cover no-repeat;
-      min-height:520px;
-    }
+
     .dark h2,.dark h3,.dark .eyebrow{color:var(--white)}
     .button{
       display:inline-block;
@@ -303,9 +307,17 @@
       .nav-left{grid-row:2}
       .nav-right{grid-row:3}
       nav a{font-size:.88rem}
-      .taster-layout{grid-template-columns:1fr}
-      .taster-copy{padding:58px 24px 48px}
-      .taster-visual{min-height:300px}
+      .taster-hero{
+        background:
+          linear-gradient(180deg,
+            rgba(49,76,64,.98) 0%,
+            rgba(49,76,64,.92) 54%,
+            rgba(49,76,64,.58) 72%,
+            rgba(49,76,64,.18) 100%),
+          url("hero-court.jpg") center bottom/cover no-repeat;
+      }
+      .taster-layout{width:min(100% - 32px,1120px);min-height:660px;align-items:flex-start}
+      .taster-copy{width:100%;padding:58px 0 280px}
       .taster-copy h2{font-size:clamp(3rem,13vw,4.8rem)}
     }
   </style>
@@ -342,7 +354,6 @@
             <p>I’ve been playing tennis for over 10 years and play competitively. I want beginners to discover how enjoyable tennis can be when it’s taught clearly and without pressure, with lessons focused on building confidence, good habits and a genuine feel for the game.</p>
           </div>
         </div>
-        <div class="taster-visual" aria-label="Tennis ball on court"></div>
       </div>
     </section>
 
