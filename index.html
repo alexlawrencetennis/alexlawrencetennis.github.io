@@ -146,7 +146,15 @@
       font-weight:400;
     }
     .faq[open] summary::after{content:"−"}
-    .faq p{margin:0;padding:0 42px 22px 0;max-width:760px}
+    .faq p{
+      margin:0;
+      padding:0 42px 22px 0;
+      max-width:760px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:1.05rem;
+      line-height:1.65;
+      color:var(--ink);
+    }
     .contact-grid{
       display:grid;
       grid-template-columns:1fr 1fr;
@@ -179,6 +187,16 @@
       text-decoration:underline;
       text-decoration-thickness:1.5px;
       text-underline-offset:5px;
+    }
+    .route-note{
+      margin:18px 0 0;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:1.05rem;
+      line-height:1.6;
+      color:var(--green);
+    }
+    .route-note strong{
+      font-weight:600;
     }
     .contact-link{
       display:block;
@@ -285,7 +303,7 @@
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
             <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=52.257240,0.398946" target="_blank" rel="noopener noreferrer">Open tennis courts in Google Maps ↗</a>
-            <p style="margin-top:18px"><strong>From the car park:</strong> follow the fence line past the houses and use the side entrance to reach the tennis courts.</p>
+            <p class="route-note"><strong>From the car park:</strong> follow the fence line past the houses and use the side entrance to reach the tennis courts.</p>
           </article>
 
           <article class="map-card">
