@@ -179,7 +179,13 @@
       color:var(--green);
       margin:24px 0 8px;
       white-space:nowrap;
-      display:block;
+      display:flex;
+      align-items:flex-end;
+      gap:.15em;
+    }
+    .price .currency, .price .digits{
+      display:inline-block;
+      line-height:1;
     }
     .small{font-size:.94rem;color:#536159}
     .dark{
@@ -583,13 +589,13 @@
           <article class="card">
             <h3>One-to-one</h3>
             <p>Individual coaching shaped around you, with plenty of time to practice and ask questions.</p>
-            <p class="price">£28</p>
+            <p class="price"><span class="currency">£</span><span class="digits">28</span></p>
             <p class="small">1 hour · court hire &amp; equipment included</p>
           </article>
           <article class="card">
             <h3>Learn together</h3>
             <p>Share a lesson with a partner or friend and learn together at a comfortable pace.</p>
-            <p class="price">£35</p>
+            <p class="price"><span class="currency">£</span><span class="digits">35</span></p>
             <p class="small">1 hour · total for two people · court hire &amp; equipment included</p>
           </article>
         </div>
