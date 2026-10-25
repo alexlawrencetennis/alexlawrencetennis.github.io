@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alexlawrencetennis.github.io/sitemap.xml
