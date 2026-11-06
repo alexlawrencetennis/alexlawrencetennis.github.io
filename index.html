@@ -287,22 +287,36 @@
       flex-direction:column;
       min-width:0;
       width:min(100%,520px);
-      height:calc(100% - 16px);
-      max-height:710px;
+      height:calc(100% - 42px);
+      max-height:680px;
       justify-self:start;
       align-self:center;
       margin-left:-66px;
     }
-    .court-pattern{
+    .hero-court-panel::before,
+    .hero-court-panel::after{
+      content:"";
       position:absolute;
-      inset:0;
-      z-index:0;
       pointer-events:none;
+      background:rgba(34,57,47,.24);
+      z-index:0;
     }
-    .court-pattern svg{
-      width:100%;
-      height:100%;
-      display:block;
+    .hero-court-panel::before{
+      left:-50%;
+      top:18%;
+      width:210%;
+      height:22%;
+      transform:rotate(24deg);
+      transform-origin:left center;
+    }
+    .hero-court-panel::after{
+      left:-48%;
+      bottom:18%;
+      width:205%;
+      height:20%;
+      transform:rotate(24deg);
+      transform-origin:left center;
+      background:rgba(34,57,47,.20);
     }
     .hero-court-top{
       position:relative;
@@ -328,7 +342,7 @@
       left:50%;
       top:50%;
       width:100%;
-      transform:translate(-50%,-48%);
+      transform:translate(-50%,-50%);
       display:flex;
       align-items:center;
       justify-content:center;
@@ -767,7 +781,7 @@
       .taster-copy .lead{font-size:.95rem;line-height:1.52}
       .hero-button-group{margin-top:20px}
       .court-illustration svg{width:min(100%,210px)}
-      .hero-court-panel{padding-top:22px;padding-bottom:20px;height:calc(100% - 10px);max-height:640px}
+      .hero-court-panel{padding-top:22px;padding-bottom:20px;height:calc(100% - 34px);max-height:610px}
     }
     @media(max-width:720px){
       .wrap{width:min(100% - 32px,1120px)}
@@ -808,13 +822,13 @@
         width:100%;
         height:auto;
         max-height:none;
-        min-height:660px;
+        min-height:620px;
         padding:32px 24px 26px;
         justify-self:stretch;
         margin-left:0;
       }
       .hero-court-bottom{font-size:2rem}
-      .court-illustration{top:52%;padding:0}
+      .court-illustration{top:50%;padding:0}
       .court-illustration svg{width:min(100%,290px)}
       .coach-content{grid-template-columns:1fr;gap:28px}
       .coach-photo{width:min(220px,68vw)}
@@ -880,18 +894,6 @@
           <div class="hero-court-top">
             <span>A fresh start, on court.</span>
             <span class="hero-court-tag">AL / Tennis</span>
-          </div>
-
-          <div class="court-pattern" aria-hidden="true">
-            <svg viewBox="0 0 520 710" preserveAspectRatio="none" role="presentation">
-              <g fill="none" stroke="rgba(34,57,47,.38)" stroke-width="1.1">
-                <path d="M-70 105 C70 15 190 185 340 95 S575 40 635 125"></path>
-                <path d="M-85 205 C65 105 200 275 350 180 S585 125 650 215"></path>
-                <path d="M-95 345 C55 235 205 420 360 315 S590 255 660 350"></path>
-                <path d="M-75 505 C75 390 215 575 375 470 S600 410 665 505"></path>
-                <path d="M-55 650 C95 535 235 700 400 605 S610 555 675 645"></path>
-              </g>
-            </svg>
           </div>
 
           <div class="court-illustration">
