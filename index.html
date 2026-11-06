@@ -144,7 +144,7 @@
       line-height:1.02;
     }
     h1{font-size:clamp(2.9rem,8vw,6.2rem);max-width:850px;margin-bottom:18px}
-    h2{font-size:clamp(1.95rem,4.5vw,3.45rem);max-width:850px;margin-bottom:22px}
+    h2{font-size:clamp(1.8rem,3.8vw,3.05rem);max-width:850px;margin-bottom:20px}
     h3{font-size:1.32rem;margin-bottom:8px}
     .hero{padding-top:82px}
     .hero-sub{
@@ -247,7 +247,7 @@
     }
     .taster-copy h2{
       color:#27483b;
-      font-size:clamp(3.65rem,5.35vw,4.75rem);
+      font-size:clamp(3.5rem,5vw,4.55rem);
       line-height:.98;
       letter-spacing:-.035em;
       margin:0 0 28px;
@@ -368,10 +368,19 @@
       padding:14px 0 12px;
     }
     .court-illustration svg{
-      width:min(100%,235px);
+      width:min(100%,265px);
       height:auto;
       display:block;
       overflow:visible;
+    }
+    .court-down-arrow{
+      position:absolute;
+      right:20px;
+      bottom:16px;
+      z-index:3;
+      font-size:1.15rem;
+      line-height:1;
+      color:rgba(255,253,247,.9);
     }
 
     .dark h2,.dark h3,.dark .eyebrow{color:var(--white)}
@@ -487,7 +496,7 @@
     .lessons-intro-left h2{
       margin:0;
       max-width:640px;
-      font-size:clamp(2.8rem,4.5vw,4.3rem);
+      font-size:clamp(2.45rem,3.9vw,3.75rem);
       line-height:.98;
       letter-spacing:-.035em;
       color:var(--green-dark);
@@ -539,7 +548,7 @@
     }
     .lesson-option h3{
       margin:0 0 18px;
-      font-size:clamp(1.9rem,2.6vw,2.55rem);
+      font-size:clamp(1.75rem,2.3vw,2.3rem);
       color:var(--green-dark);
       line-height:1.02;
     }
@@ -662,7 +671,7 @@
       color:var(--green);
       margin-bottom:0;
       max-width:520px;
-      font-size:clamp(2.8rem,5vw,4.7rem);
+      font-size:clamp(2.35rem,4vw,3.65rem);
       line-height:.98;
     }
     #contact .contact-grid > div:last-child{
@@ -837,7 +846,7 @@
       .taster-copy{padding:54px 0 40px;gap:34px}
       .hero-kicker{margin-bottom:28px;font-size:.72rem;letter-spacing:.18em}
       .hero-line{white-space:normal}
-      .taster-copy h2{font-size:clamp(3.2rem,15vw,4.55rem);margin-bottom:28px}
+      .taster-copy h2{font-size:clamp(3rem,13.5vw,4.2rem);margin-bottom:26px}
       .taster-copy .lead{font-size:1rem;line-height:1.65}
       .hero-button{min-width:0;width:100%;max-width:320px}
       .hero-court-panel{
@@ -851,7 +860,7 @@
       }
       .hero-court-bottom{font-size:2rem}
       .court-illustration{padding:24px 0 18px}
-      .court-illustration svg{width:min(100%,270px)}
+      .court-illustration svg{width:min(100%,290px)}
       .coach-content{grid-template-columns:1fr;gap:28px}
       .coach-photo{width:min(220px,68vw)}
 
@@ -859,7 +868,7 @@
       #lessons{padding-top:50px;padding-bottom:52px}
       #lessons .wrap{width:min(100% - 32px,1290px)}
       .lessons-intro{grid-template-columns:1fr;gap:24px;margin-bottom:46px}
-      .lessons-intro-left h2{font-size:clamp(2.5rem,11.5vw,3.7rem)}
+      .lessons-intro-left h2{font-size:clamp(2.25rem,10.2vw,3.3rem)}
       .lessons-intro-copy{padding-top:0;max-width:none}
       .lesson-options{grid-template-columns:1fr;gap:46px}
       .lesson-meta{margin-bottom:30px}
@@ -872,7 +881,7 @@
       #contact{padding-top:58px;padding-bottom:58px}
       #contact .contact-grid{grid-template-columns:1fr;gap:42px}
       #contact .contact-grid > div:last-child{padding-left:0;padding-top:0}
-      #contact h2{font-size:clamp(2.7rem,13vw,4rem)}
+      #contact h2{font-size:clamp(2.3rem,10.8vw,3.4rem)}
 }
   </style>
 </head>
@@ -949,6 +958,7 @@
                     fill="none" stroke="#fff9e9" stroke-width="1.15" stroke-linecap="round"></path>
             </svg>
           </div>
+          <span class="court-down-arrow">↓</span>
 
         </div>
       </div>
