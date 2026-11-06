@@ -476,6 +476,75 @@
       line-height:1.55;
       color:var(--white);
     }
+    #lessons{
+      background:#f4efe4;
+      padding-top:86px;
+      padding-bottom:92px;
+    }
+    .lessons-intro{
+      display:grid;
+      grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);
+      gap:clamp(56px,8vw,118px);
+      align-items:start;
+      margin-bottom:58px;
+    }
+    .lessons-intro .eyebrow{
+      margin:5px 0 0;
+      color:#6a776f;
+    }
+    .lessons-intro-copy h2{
+      margin:0 0 24px;
+      max-width:690px;
+      font-size:clamp(3rem,5vw,4.7rem);
+      line-height:.98;
+      letter-spacing:-.03em;
+      color:var(--green);
+    }
+    .lessons-intro-copy p{
+      margin:0;
+      max-width:620px;
+      font-size:1.04rem;
+      line-height:1.72;
+      color:#5f6d65;
+    }
+    #lessons .grid{
+      gap:0;
+      margin-top:0;
+      border-top:1px solid rgba(49,76,64,.22);
+      border-bottom:1px solid rgba(49,76,64,.22);
+    }
+    #lessons .card{
+      min-height:285px;
+      padding:34px 34px 32px 0;
+      display:flex;
+      flex-direction:column;
+      background:transparent;
+    }
+    #lessons .card + .card{
+      border-left:1px solid rgba(49,76,64,.22);
+      padding-left:42px;
+    }
+    #lessons .card h3{
+      margin:0 0 18px;
+      font-size:clamp(1.8rem,2.5vw,2.35rem);
+      color:var(--green);
+    }
+    #lessons .card > p:not(.price):not(.small){
+      margin:0;
+      max-width:430px;
+      color:#5d6a63;
+      line-height:1.65;
+    }
+    #lessons .price{
+      margin:32px 0 9px;
+      font-size:2.7rem;
+    }
+    #lessons .small{
+      margin:0;
+      line-height:1.55;
+      color:#65736b;
+    }
+
     .faq{
       border-top:1px solid var(--line);
     }
@@ -721,6 +790,13 @@
       .court-illustration svg{width:min(100%,270px)}
       .coach-content{grid-template-columns:1fr;gap:28px}
       .coach-photo{width:min(240px,72vw)}
+      #lessons{padding-top:64px;padding-bottom:68px}
+      .lessons-intro{grid-template-columns:1fr;gap:22px;margin-bottom:38px}
+      .lessons-intro-copy h2{font-size:clamp(2.75rem,12vw,4rem);margin-bottom:20px}
+      #lessons .grid{grid-template-columns:1fr}
+      #lessons .card{min-height:0;padding:30px 0}
+      #lessons .card + .card{border-left:0;border-top:1px solid rgba(49,76,64,.22);padding-left:0}
+
     
       #contact{padding-top:58px;padding-bottom:58px}
       #contact .contact-grid{grid-template-columns:1fr;gap:42px}
@@ -838,18 +914,25 @@
 
     <section id="lessons">
       <div class="wrap">
-        <p class="eyebrow">Lessons &amp; prices</p>
-        <h2>Simple one-hour sessions.</h2>
+        <div class="lessons-intro">
+          <p class="eyebrow">The lessons</p>
+          <div class="lessons-intro-copy">
+            <h2>Your pace. Your kind of lesson.</h2>
+            <p>Choose an hour for yourself or share the experience with a partner or friend. Both formats are designed with adult beginners in mind, with clear coaching, time to practise and no pressure.</p>
+          </div>
+        </div>
+
         <div class="grid">
           <article class="card">
             <h3>One-to-one</h3>
-            <p>Individual coaching shaped around you, with plenty of time to practice and ask questions.</p>
+            <p>Individual coaching shaped around you, with plenty of time to practise, ask questions and build confidence at your own pace.</p>
             <p class="price"><span class="currency">£</span><span class="digits">28</span></p>
             <p class="small">1 hour · court hire &amp; equipment included</p>
           </article>
+
           <article class="card">
             <h3>Learn together</h3>
-            <p>Share a lesson with a partner or friend and learn together at a comfortable pace.</p>
+            <p>Share the lesson with a partner or friend and learn together at a comfortable pace, while still getting plenty of individual guidance.</p>
             <p class="price"><span class="currency">£</span><span class="digits">35</span></p>
             <p class="small">1 hour · total for two people · court hire &amp; equipment included</p>
           </article>
