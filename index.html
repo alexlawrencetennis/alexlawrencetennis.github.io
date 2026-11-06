@@ -497,42 +497,65 @@
       color:var(--ink);
     }
     #contact{
-      background:var(--green);
-      color:var(--white);
+      background:#f4efe4;
+      color:var(--green-dark);
       border-bottom:0;
-      padding-top:36px;
-      padding-bottom:36px;
+      padding-top:76px;
+      padding-bottom:78px;
+    }
+    #contact .contact-grid{
+      grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+      gap:clamp(70px,9vw,150px);
+      align-items:start;
     }
     #contact .eyebrow{
-      color:#d9e9a8;
-    }
-    #contact h2,
-    #contact .contact-link{
-      color:var(--white);
-    }
-    #contact .contact-link{
-      text-decoration-color:rgba(255,253,247,.65);
+      color:#66766d;
     }
     #contact h2{
-      margin-bottom:34px;
+      color:var(--green);
+      margin-bottom:0;
+      max-width:520px;
+      font-size:clamp(2.8rem,5vw,4.7rem);
+      line-height:.98;
+    }
+    #contact .contact-grid > div:last-child{
+      padding-left:0;
+      padding-top:8px;
     }
     #contact .contact-grid > div:last-child .eyebrow{
-      margin-bottom:12px;
+      margin-bottom:10px;
+      font-size:.68rem;
+      letter-spacing:.22em;
     }
     #contact .contact-grid > div:last-child .contact-link{
-      margin-bottom:36px;
+      margin-bottom:32px;
     }
-    #contact .contact-grid > div:last-child .contact-link:last-child{
-      margin-bottom:0;
+    #contact .contact-grid > div:last-child .contact-link:last-of-type{
+      margin-bottom:34px;
+    }
+    #contact .contact-link{
+      color:var(--green-dark);
+      text-decoration-color:rgba(36,58,49,.45);
+      font-size:clamp(1.04rem,1.7vw,1.28rem);
+    }
+    #contact .contact-link:hover{
+      text-decoration-thickness:2px;
+    }
+    #contact .instagram-link{
+      color:var(--green-dark);
+      width:38px;
+      height:38px;
+    }
+    #contact .instagram-link svg{
+      width:30px;
+      height:30px;
+      stroke-width:1.7;
     }
     .contact-grid{
       display:grid;
       grid-template-columns:minmax(0,1fr) minmax(0,.82fr);
       gap:72px;
       align-items:start;
-    }
-    #contact .contact-grid > div:last-child{
-      padding-left:clamp(24px,4vw,72px);
     }
     .map-grid{
       display:grid;
@@ -666,7 +689,10 @@
       .coach-content{grid-template-columns:1fr;gap:28px}
       .coach-photo{width:min(240px,72vw)}
     
-      #contact .contact-grid > div:last-child{padding-left:0}
+      #contact{padding-top:58px;padding-bottom:58px}
+      #contact .contact-grid{grid-template-columns:1fr;gap:42px}
+      #contact .contact-grid > div:last-child{padding-left:0;padding-top:0}
+      #contact h2{font-size:clamp(2.7rem,13vw,4rem)}
 }
   </style>
 </head>
