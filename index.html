@@ -194,49 +194,155 @@
     }
     .taster-hero{
       padding:0;
-      color:var(--white);
+      color:var(--ink);
       border-bottom:0;
-      background:var(--green);
+      background:var(--cream);
     }
     .taster-layout{
-      min-height:640px;
-      display:flex;
-      align-items:center;
-      background:
-        linear-gradient(90deg,
-          rgba(49,76,64,1) 0%,
-          rgba(49,76,64,1) 24%,
-          rgba(49,76,64,.98) 32%,
-          rgba(49,76,64,.91) 39%,
-          rgba(49,76,64,.72) 48%,
-          rgba(49,76,64,.40) 58%,
-          rgba(49,76,64,.10) 70%,
-          rgba(49,76,64,0) 100%),
-        url("https://images.pexels.com/photos/32832524/pexels-photo-32832524/free-photo-of-tennis-ball-on-green-court-with-white-lines.jpeg?auto=compress&dpr=1&w=1920") 79% 52%/cover no-repeat;
+      display:grid;
+      grid-template-columns:minmax(0,1.12fr) minmax(340px,.88fr);
+      min-height:720px;
     }
     .taster-copy{
-      width:min(620px,39vw);
-      margin-left:max(42px,7.2vw);
-      padding:54px 0 58px;
+      padding:72px clamp(34px,5vw,66px) 56px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      gap:44px;
+      background:var(--cream);
+    }
+    .hero-intro{max-width:640px}
+    .hero-kicker{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin:0 0 34px;
+      font-size:.78rem;
+      font-weight:700;
+      letter-spacing:.2em;
+      text-transform:uppercase;
+      color:var(--green);
+    }
+    .hero-kicker::before{
+      content:"";
+      width:40px;
+      height:1px;
+      background:rgba(49,76,64,.55);
+      flex-shrink:0;
     }
     .taster-copy h2{
-      color:var(--white);
-      font-size:clamp(2.9rem,3.9vw,4.6rem);
-      line-height:.98;
-      margin-bottom:26px;
+      color:var(--green);
+      font-size:clamp(3.2rem,5.8vw,5.4rem);
+      line-height:.96;
+      margin-bottom:30px;
       max-width:620px;
     }
     .hero-line{white-space:nowrap}
-    .taster-copy .eyebrow{
-      color:#d9e9a8;
-    }
-
     .taster-copy .lead{
-      color:var(--white);
       font-family:Arial,Helvetica,sans-serif;
-      font-size:clamp(.96rem,1.08vw,1.14rem);
-      line-height:1.55;
-      max-width:540px;
+      font-size:clamp(1.05rem,1.55vw,1.18rem);
+      line-height:1.7;
+      color:#5b6b62;
+      max-width:520px;
+    }
+    .hero-button-group{margin-top:38px}
+    .hero-button{
+      background:var(--green);
+      border-color:var(--green);
+      color:var(--white);
+    }
+    .hero-button:hover{
+      background:var(--green-dark);
+      border-color:var(--green-dark);
+      color:var(--white);
+    }
+    .hero-caption{
+      margin:18px 0 0;
+      font-size:1rem;
+      color:#6f7e75;
+    }
+    .hero-summary{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:26px;
+      padding-top:34px;
+      border-top:1px solid rgba(49,76,64,.18);
+      max-width:710px;
+    }
+    .hero-summary-label{
+      margin:0 0 10px;
+      font-size:.75rem;
+      font-weight:700;
+      letter-spacing:.2em;
+      text-transform:uppercase;
+      color:#67766d;
+    }
+    .hero-summary-value{
+      margin:0;
+      font-size:1.25rem;
+      line-height:1.4;
+      color:var(--green);
+    }
+    .hero-court-panel{
+      position:relative;
+      overflow:hidden;
+      background:linear-gradient(180deg,#395848 0%,#314c40 100%);
+      color:var(--white);
+      padding:34px clamp(24px,3.1vw,38px) 28px;
+      display:flex;
+      flex-direction:column;
+      min-width:0;
+    }
+    .hero-court-panel::before{
+      content:"";
+      position:absolute;
+      inset:auto -12% 6% 16%;
+      height:54%;
+      background:rgba(36,58,49,.38);
+      clip-path:polygon(0 0,100% 42%,100% 100%,26% 100%);
+      pointer-events:none;
+    }
+    .hero-court-top,.hero-court-bottom{
+      position:relative;
+      z-index:1;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+    }
+    .hero-court-top{font-size:.78rem;letter-spacing:.03em}
+    .hero-court-tag{
+      font-size:.78rem;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+    .court-illustration{
+      position:relative;
+      z-index:1;
+      flex:1;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:20px 0;
+    }
+    .court-illustration svg{
+      width:min(100%,410px);
+      height:auto;
+      display:block;
+    }
+    .hero-court-bottom{
+      font-family:Georgia,"Times New Roman",serif;
+      font-style:italic;
+      font-size:clamp(2rem,3.2vw,3rem);
+      line-height:1;
+    }
+    .hero-scroll{
+      font-family:Arial,Helvetica,sans-serif;
+      font-style:normal;
+      font-size:2.4rem;
+      font-weight:300;
+      line-height:1;
     }
 
     .dark h2,.dark h3,.dark .eyebrow{color:var(--white)}
@@ -492,20 +598,15 @@
       .nav-left{grid-row:2}
       .nav-right{grid-row:3}
       nav a{font-size:.88rem}
-      .taster-layout{
-        min-height:660px;
-        align-items:flex-start;
-        background:
-          linear-gradient(180deg,
-            rgba(49,76,64,.98) 0%,
-            rgba(49,76,64,.94) 50%,
-            rgba(49,76,64,.58) 72%,
-            rgba(49,76,64,.18) 100%),
-          url("https://images.pexels.com/photos/32832524/pexels-photo-32832524/free-photo-of-tennis-ball-on-green-court-with-white-lines.jpeg?auto=compress&dpr=1&w=1600") 68% bottom/cover no-repeat;
-      }
-      .taster-copy{width:calc(100% - 32px);margin:0 auto;padding:54px 0 280px}
+      .taster-layout{grid-template-columns:1fr;min-height:auto}
+      .taster-copy{padding:52px 16px 38px;gap:34px}
+      .hero-kicker{margin-bottom:24px;font-size:.74rem}
       .hero-line{white-space:normal}
-      .taster-copy h2{font-size:clamp(3rem,13vw,4.8rem)}
+      .taster-copy h2{font-size:clamp(3rem,15vw,4.4rem)}
+      .hero-summary{grid-template-columns:1fr;gap:20px}
+      .hero-court-panel{min-height:540px;padding:28px 22px 24px}
+      .hero-court-bottom{font-size:2rem}
+      .court-illustration svg{width:min(100%,320px)}
       .coach-content{grid-template-columns:1fr;gap:28px}
       .coach-photo{width:min(240px,72vw)}
     
@@ -554,10 +655,54 @@
     <section class="taster-hero">
       <div class="taster-layout">
         <div class="taster-copy">
-          <p class="eyebrow">Complimentary taster lesson</p>
-          <h2><span class="hero-line">Meet your coach.</span><br>Give tennis a try.</h2>
-          <p class="lead">A relaxed introduction to tennis and a chance to meet Alex. Get a feel for the coaching before arranging regular lessons.</p>
-          <a class="button" href="mailto:alexlawrencetennis@gmail.com?subject=Taster%20lesson%20enquiry">Enquire about a taster lesson</a>
+          <div class="hero-intro">
+            <p class="hero-kicker">A comfortable place to start</p>
+            <h2><span class="hero-line">Your first serve</span><br>starts <em>here.</em></h2>
+            <p class="lead">Beginner tennis lessons for adults, with Alex Lawrence. Learn at your own pace, one-to-one or with a partner.</p>
+            <div class="hero-button-group">
+              <a class="button hero-button" href="mailto:alexlawrencetennis@gmail.com?subject=Taster%20lesson%20enquiry">Ask about a taster</a>
+              <p class="hero-caption">A complimentary introduction to the game.</p>
+            </div>
+          </div>
+          <div class="hero-summary" aria-label="Lesson and location summary">
+            <div>
+              <p class="hero-summary-label">The lessons</p>
+              <p class="hero-summary-value">One-to-one or for two</p>
+            </div>
+            <div>
+              <p class="hero-summary-label">The place</p>
+              <p class="hero-summary-value">Astley Place Tennis Courts</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-court-panel" aria-hidden="true">
+          <div class="hero-court-top">
+            <span>A fresh start, on court.</span>
+            <span class="hero-court-tag">AL / Tennis</span>
+          </div>
+          <div class="court-illustration">
+            <svg viewBox="0 0 300 620" role="presentation">
+              <g fill="none" stroke="rgba(254,250,241,.84)" stroke-width="4" stroke-linecap="square">
+                <rect x="66" y="40" width="168" height="500"></rect>
+                <line x1="98" y1="40" x2="98" y2="540"></line>
+                <line x1="202" y1="40" x2="202" y2="540"></line>
+                <line x1="66" y1="154" x2="234" y2="154"></line>
+                <line x1="66" y1="426" x2="234" y2="426"></line>
+                <line x1="150" y1="154" x2="150" y2="426"></line>
+                <line x1="44" y1="290" x2="256" y2="290"></line>
+                <line x1="38" y1="282" x2="38" y2="298"></line>
+                <line x1="262" y1="282" x2="262" y2="298"></line>
+                <line x1="150" y1="40" x2="150" y2="52"></line>
+                <line x1="150" y1="528" x2="150" y2="540"></line>
+              </g>
+              <circle cx="178" cy="372" r="10" fill="#D9E9A8"></circle>
+              <path d="M172 363c4 2 7 5 8 9 1 4 0 8-2 11" fill="none" stroke="#fefaf1" stroke-width="2.2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+          <div class="hero-court-bottom">
+            <span>Find your rhythm.</span>
+            <span class="hero-scroll">↓</span>
+          </div>
         </div>
       </div>
       <div class="coach-strip">
