@@ -775,6 +775,8 @@
       font-size:.9em;
       vertical-align:0;
     }
+    .arrow-desktop{display:inline}
+    .arrow-mobile{display:none}
     .instagram-link{
       display:inline-flex;
       align-items:center;
@@ -819,6 +821,8 @@
     }
     @media(max-width:720px){
       .wrap{width:min(100% - 32px,1120px)}
+      .arrow-desktop{display:none}
+      .arrow-mobile{display:inline}
       main section{padding:58px 0}
       .hero{padding-top:58px}
       .grid,.contact-grid,.map-grid{grid-template-columns:1fr}
@@ -1047,7 +1051,7 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=52.257240,0.398946" target="_blank" rel="noopener noreferrer">Open tennis courts in Google Maps ↗️</a>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=52.257240,0.398946" target="_blank" rel="noopener noreferrer">Open tennis courts in Google Maps <span class="arrow-desktop">↗</span><span class="arrow-mobile">↗️</span></a>
             <p class="route-note"><strong>From the car park:</strong> follow the fence line past the houses and use the side entrance to reach the tennis courts.</p>
           </article>
 
@@ -1060,7 +1064,7 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-            <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=52.258182,0.400515" target="_blank" rel="noopener noreferrer">Open parking in Google Maps ↗️</a>
+            <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=52.258182,0.400515" target="_blank" rel="noopener noreferrer">Open parking in Google Maps <span class="arrow-desktop">↗</span><span class="arrow-mobile">↗️</span></a>
           </article>
         </div>
       </div>
@@ -1103,9 +1107,9 @@
         </div>
         <div>
           <p class="eyebrow">Email Alex</p>
-          <a class="contact-link" href="mailto:alexlawrencetennis@gmail.com">alexlawrencetennis@gmail.com <span class="link-arrow">↗️</span></a>
+          <a class="contact-link" href="mailto:alexlawrencetennis@gmail.com">alexlawrencetennis@gmail.com <span class="arrow-desktop">↗</span><span class="arrow-mobile">↗️</span></a>
           <p class="eyebrow">Call or text</p>
-          <a class="contact-link" href="tel:+447933071733">07933 071733 <span class="link-arrow">↗️</span></a>
+          <a class="contact-link" href="tel:+447933071733">07933 071733 <span class="arrow-desktop">↗</span><span class="arrow-mobile">↗️</span></a>
           <p class="eyebrow">Instagram</p>
           <a class="instagram-link" href="https://www.instagram.com/alexlawrencetennis/" target="_blank" rel="noopener noreferrer" aria-label="Alex Lawrence Tennis on Instagram">
             <svg viewBox="0 0 24 24" aria-hidden="true">
