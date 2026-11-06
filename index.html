@@ -147,6 +147,11 @@
       font-size:clamp(.94rem,1.04vw,1.1rem);
       line-height:1.55;
     }
+    #about .wrap{
+      width:min(1428px,calc(100% - 64px));
+      padding-left:82px;
+      padding-right:24px;
+    }
     .grid{
       display:grid;
       grid-template-columns:repeat(2,minmax(0,1fr));
@@ -250,9 +255,9 @@
     .hero-button{
       display:inline-flex;
       align-items:center;
-      justify-content:space-between;
-      min-width:250px;
-      gap:24px;
+      justify-content:center;
+      min-width:230px;
+      gap:0;
       margin-top:0;
       padding:15px 24px;
       background:var(--green);
@@ -364,9 +369,9 @@
     .button.hero-button{
       display:inline-flex;
       align-items:center;
-      justify-content:space-between;
-      min-width:250px;
-      gap:24px;
+      justify-content:center;
+      min-width:230px;
+      gap:0;
       margin-top:0;
       padding:15px 24px;
       border:1px solid var(--green);
@@ -777,6 +782,7 @@
     }
     @media(max-width:720px){
       .wrap{width:min(100% - 32px,1120px)}
+      #about .wrap{width:min(100% - 32px,1120px);padding-left:0;padding-right:0}
       main section{padding:58px 0}
       .hero{padding-top:58px}
       .grid,.contact-grid,.map-grid{grid-template-columns:1fr}
