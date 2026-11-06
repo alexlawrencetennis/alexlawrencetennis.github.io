@@ -325,8 +325,9 @@
       width:min(100%,455px);
       height:calc(100% - 42px);
       max-height:680px;
-      justify-self:end;
+      justify-self:start;
       align-self:center;
+      margin-left:18px;
     }
     .hero-court-panel::before,
     .hero-court-panel::after{
@@ -353,8 +354,7 @@
       transform-origin:left top;
       background:rgba(34,57,47,.20);
     }
-    .hero-court-top,
-    .hero-court-bottom{
+    .hero-court-top{
       position:relative;
       z-index:2;
       display:flex;
@@ -386,19 +386,6 @@
       height:auto;
       display:block;
       overflow:visible;
-    }
-    .hero-court-bottom{
-      font-family:Georgia,"Times New Roman",serif;
-      font-style:italic;
-      font-size:clamp(1.45rem,1.9vw,1.9rem);
-      line-height:1;
-    }
-    .hero-scroll{
-      font-family:Arial,Helvetica,sans-serif;
-      font-style:normal;
-      font-size:2.5rem;
-      font-weight:300;
-      line-height:1;
     }
 
     .dark h2,.dark h3,.dark .eyebrow{color:var(--white)}
@@ -727,6 +714,7 @@
         min-height:620px;
         padding:32px 24px 26px;
         justify-self:stretch;
+        margin-left:0;
       }
       .hero-court-bottom{font-size:2rem}
       .court-illustration{padding:24px 0 18px}
@@ -824,10 +812,6 @@
             </svg>
           </div>
 
-          <div class="hero-court-bottom">
-            <span>Find your rhythm.</span>
-            <span class="hero-scroll">↓</span>
-          </div>
         </div>
       </div>
     </section>
