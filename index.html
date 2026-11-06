@@ -205,16 +205,17 @@
       width:min(1428px,calc(100% - 64px));
       margin:0 auto;
       display:grid;
-      grid-template-columns:minmax(0,1.1fr) minmax(460px,.9fr);
-      min-height:820px;
+      grid-template-columns:minmax(0,1.1fr) minmax(430px,.9fr);
+      height:clamp(640px,calc(100vh - 220px),735px);
+      min-height:0;
       align-items:stretch;
     }
     .taster-copy{
-      padding:104px 74px 54px 0;
+      padding:62px 68px 38px 0;
       display:flex;
       flex-direction:column;
       justify-content:space-between;
-      gap:46px;
+      gap:30px;
       background:var(--cream);
     }
     .hero-intro{max-width:650px}
@@ -222,7 +223,7 @@
       display:flex;
       align-items:center;
       gap:16px;
-      margin:0 0 46px;
+      margin:0 0 28px;
       font-size:.76rem;
       font-weight:700;
       letter-spacing:.21em;
@@ -238,11 +239,11 @@
     }
     .taster-copy h2{
       color:#27483b;
-      font-size:clamp(4.15rem,6.25vw,5.55rem);
-      line-height:.99;
+      font-size:clamp(3.65rem,5.35vw,4.75rem);
+      line-height:.98;
       letter-spacing:-.035em;
-      margin:0 0 40px;
-      max-width:640px;
+      margin:0 0 28px;
+      max-width:590px;
     }
     .hero-line{white-space:nowrap}
     .taster-copy h2 em{
@@ -252,20 +253,20 @@
     .taster-copy .lead{
       margin:0;
       font-family:Arial,Helvetica,sans-serif;
-      font-size:clamp(1.08rem,1.45vw,1.24rem);
-      line-height:1.72;
+      font-size:clamp(1rem,1.22vw,1.12rem);
+      line-height:1.62;
       color:#64746b;
-      max-width:500px;
+      max-width:485px;
     }
-    .hero-button-group{margin-top:40px}
+    .hero-button-group{margin-top:28px}
     .hero-button{
       display:inline-flex;
       align-items:center;
       justify-content:space-between;
-      min-width:278px;
-      gap:28px;
+      min-width:250px;
+      gap:24px;
       margin-top:0;
-      padding:18px 28px;
+      padding:15px 24px;
       background:var(--green);
       border:1px solid var(--green);
       color:var(--white);
@@ -286,15 +287,15 @@
       color:var(--white);
     }
     .hero-caption{
-      margin:17px 0 0;
-      font-size:.96rem;
+      margin:13px 0 0;
+      font-size:.9rem;
       color:#6e7c74;
     }
     .hero-summary{
       display:grid;
       grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:28px;
-      padding-top:28px;
+      gap:24px;
+      padding-top:20px;
       border-top:1px solid rgba(49,76,64,.24);
       max-width:710px;
     }
@@ -308,8 +309,8 @@
     }
     .hero-summary-value{
       margin:0;
-      font-size:1rem;
-      line-height:1.45;
+      font-size:.94rem;
+      line-height:1.4;
       color:#314c40;
     }
     .hero-court-panel{
@@ -317,7 +318,7 @@
       overflow:hidden;
       background:#355445;
       color:var(--white);
-      padding:38px 38px 34px;
+      padding:30px 34px 26px;
       display:flex;
       flex-direction:column;
       min-width:0;
@@ -373,10 +374,10 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      padding:26px 0 20px;
+      padding:14px 0 12px;
     }
     .court-illustration svg{
-      width:min(100%,318px);
+      width:min(100%,255px);
       height:auto;
       display:block;
       overflow:visible;
@@ -384,7 +385,7 @@
     .hero-court-bottom{
       font-family:Georgia,"Times New Roman",serif;
       font-style:italic;
-      font-size:clamp(1.85rem,2.6vw,2.55rem);
+      font-size:clamp(1.65rem,2.2vw,2.15rem);
       line-height:1;
     }
     .hero-scroll{
@@ -648,6 +649,17 @@
       font-size:1.3rem;
       color:var(--green);
       margin:0;
+    }
+    @media(min-width:721px) and (max-height:820px){
+      .taster-layout{height:clamp(590px,calc(100vh - 220px),650px)}
+      .taster-copy{padding-top:42px;padding-bottom:28px}
+      .hero-kicker{margin-bottom:20px}
+      .taster-copy h2{font-size:clamp(3.35rem,4.8vw,4.3rem);margin-bottom:22px}
+      .taster-copy .lead{font-size:1rem;line-height:1.52}
+      .hero-button-group{margin-top:20px}
+      .hero-summary{padding-top:16px}
+      .court-illustration svg{width:min(100%,225px)}
+      .hero-court-panel{padding-top:24px;padding-bottom:22px}
     }
     @media(max-width:720px){
       .wrap{width:min(100% - 32px,1120px)}
