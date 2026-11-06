@@ -211,7 +211,7 @@
       align-items:center;
     }
     .taster-copy{
-      padding:62px 34px 38px 64px;
+      padding:62px 24px 38px 82px;
       display:flex;
       flex-direction:column;
       justify-content:space-between;
@@ -305,7 +305,7 @@
       max-height:680px;
       justify-self:start;
       align-self:center;
-      margin-left:-18px;
+      margin-left:-54px;
     }
     .hero-court-panel::before,
     .hero-court-panel::after{
@@ -403,18 +403,19 @@
 
     .dark .button:hover{background:var(--white);color:var(--green)}
     .coach-strip{
-      background:var(--green);
-      border-top:0;
-      padding:42px 0 50px;
+      background:var(--cream);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      padding:54px 0 58px;
     }
     .coach-content{
       display:grid;
-      grid-template-columns:220px minmax(0,820px);
-      gap:44px;
+      grid-template-columns:180px minmax(0,780px);
+      gap:42px;
       align-items:center;
     }
     .coach-photo{
-      width:220px;
+      width:180px;
       aspect-ratio:1;
       border-radius:50%;
       overflow:hidden;
@@ -436,91 +437,98 @@
     }
     .coach-note{
       margin:0;
-      max-width:820px;
+      max-width:780px;
     }
     .coach-note .eyebrow{
-      margin-bottom:16px;
+      margin-bottom:14px;
       font-family:Georgia,"Times New Roman",serif;
-      font-size:1.65rem;
+      font-size:1.5rem;
       font-weight:500;
       letter-spacing:0;
       text-transform:none;
-      color:var(--white);
+      color:var(--green);
     }
     .coach-note p{
       margin:0;
       font-family:Arial,Helvetica,sans-serif;
-      font-size:clamp(.94rem,1.04vw,1.1rem);
-      line-height:1.55;
-      color:var(--white);
+      font-size:clamp(.92rem,1vw,1.05rem);
+      line-height:1.6;
+      color:var(--ink);
     }
     #lessons{
       background:#e9dfcf;
-      padding-top:86px;
-      padding-bottom:92px;
+      padding-top:74px;
+      padding-bottom:82px;
     }
     .lessons-intro{
       display:block;
-      margin-bottom:58px;
-      max-width:760px;
+      margin-bottom:46px;
+      max-width:720px;
     }
     .lessons-intro .eyebrow{
-      margin:0 0 18px;
+      margin:0 0 16px;
       color:#6a776f;
     }
     .lessons-intro-copy h2{
-      margin:0 0 24px;
-      max-width:690px;
-      font-size:clamp(3rem,5vw,4.7rem);
-      line-height:.98;
-      letter-spacing:-.03em;
+      margin:0 0 18px;
+      max-width:650px;
+      font-size:clamp(2.45rem,4vw,3.75rem);
+      line-height:1;
+      letter-spacing:-.025em;
       color:var(--green);
     }
     .lessons-intro-copy p{
       margin:0;
-      max-width:620px;
-      font-size:1.04rem;
-      line-height:1.72;
+      max-width:610px;
+      font-size:.98rem;
+      line-height:1.65;
       color:#5f6d65;
     }
     #lessons .grid{
-      gap:0;
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:42px;
       margin-top:0;
-      border-top:1px solid rgba(49,76,64,.22);
-      border-bottom:1px solid rgba(49,76,64,.22);
     }
     #lessons .card{
-      min-height:285px;
-      padding:34px 34px 32px 0;
+      min-height:0;
+      padding:22px 0 0;
+      border-top:1px solid rgba(49,76,64,.26);
+      background:transparent;
       display:flex;
       flex-direction:column;
-      background:transparent;
     }
-    #lessons .card + .card{
-      padding-left:42px;
+    .lesson-number{
+      margin:0 0 22px;
+      font-size:.7rem;
+      font-weight:700;
+      letter-spacing:.18em;
+      color:#748078;
     }
     #lessons .card h3{
-      margin:0 0 18px;
-      font-size:clamp(1.8rem,2.5vw,2.35rem);
+      margin:0 0 14px;
+      font-size:clamp(1.55rem,2.2vw,2.05rem);
       color:var(--green);
     }
-    #lessons .card > p:not(.price):not(.small){
+    #lessons .card > p:not(.price):not(.small):not(.lesson-number){
       margin:0;
       max-width:430px;
       color:#5d6a63;
-      line-height:1.65;
+      line-height:1.6;
+      font-size:.96rem;
     }
     #lessons .price{
-      margin:32px 0 9px;
+      margin:28px 0 8px;
       font-family:Georgia,"Times New Roman",serif;
-      font-size:2.7rem;
+      font-size:2.45rem;
       font-weight:500;
       letter-spacing:-.02em;
     }
     #lessons .small{
       margin:0;
-      line-height:1.55;
+      line-height:1.5;
       color:#65736b;
+      font-size:.9rem;
     }
 
     .faq{
@@ -712,7 +720,7 @@
     }
     @media(min-width:721px) and (max-height:820px){
       .taster-layout{height:clamp(590px,calc(100vh - 220px),650px)}
-      .taster-copy{padding-top:42px;padding-right:30px;padding-bottom:28px;padding-left:64px}
+      .taster-copy{padding-top:42px;padding-right:24px;padding-bottom:28px;padding-left:82px}
       .hero-kicker{margin-bottom:20px}
       .taster-copy h2{font-size:clamp(3.35rem,4.8vw,4.3rem);margin-bottom:22px}
       .taster-copy .lead{font-size:1rem;line-height:1.52}
@@ -764,14 +772,13 @@
       .hero-court-bottom{font-size:2rem}
       .court-illustration{padding:24px 0 18px}
       .court-illustration svg{width:min(100%,270px)}
-      .coach-content{grid-template-columns:1fr;gap:28px}
-      .coach-photo{width:min(240px,72vw)}
-      #lessons{padding-top:64px;padding-bottom:68px}
-      .lessons-intro{margin-bottom:38px}
-      .lessons-intro-copy h2{font-size:clamp(2.75rem,12vw,4rem);margin-bottom:20px}
-      #lessons .grid{grid-template-columns:1fr}
-      #lessons .card{min-height:0;padding:30px 0}
-      #lessons .card + .card{border-top:1px solid rgba(49,76,64,.22);padding-left:0}
+      .coach-content{grid-template-columns:1fr;gap:26px}
+      .coach-photo{width:min(210px,64vw)}
+      #lessons{padding-top:58px;padding-bottom:64px}
+      .lessons-intro{margin-bottom:34px}
+      .lessons-intro-copy h2{font-size:clamp(2.45rem,11vw,3.7rem);margin-bottom:18px}
+      #lessons .grid{grid-template-columns:1fr;gap:30px}
+      #lessons .card{min-height:0;padding:20px 0 0}
 
     
       #contact{padding-top:58px;padding-bottom:58px}
@@ -828,6 +835,7 @@
 
           <div class="court-illustration">
             <svg viewBox="0 0 320 700" role="presentation">
+              <rect x="45" y="95" width="230" height="500" fill="#436b59"></rect>
               <g fill="none" stroke="#efece0" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="miter">
                 <rect x="45" y="95" width="230" height="500"></rect>
                 <line x1="74" y1="95" x2="74" y2="595"></line>
@@ -890,6 +898,7 @@
 
         <div class="grid">
           <article class="card">
+            <p class="lesson-number">01</p>
             <h3>One-to-one</h3>
             <p>Individual coaching shaped around you, with plenty of time to practise, ask questions and build confidence at your own pace.</p>
             <p class="price"><span class="currency">£</span><span class="digits">28</span></p>
@@ -897,6 +906,7 @@
           </article>
 
           <article class="card">
+            <p class="lesson-number">02</p>
             <h3>Learn together</h3>
             <p>Share the lesson with a partner or friend and learn together at a comfortable pace, while still getting plenty of individual guidance.</p>
             <p class="price"><span class="currency">£</span><span class="digits">35</span></p>
