@@ -457,78 +457,136 @@
     }
     #lessons{
       background:#f4efe4;
-      padding-top:74px;
-      padding-bottom:82px;
+      padding-top:72px;
+      padding-bottom:66px;
+    }
+    #lessons .wrap{
+      width:min(1290px,calc(100% - 96px));
     }
     .lessons-intro{
+      display:grid;
+      grid-template-columns:minmax(0,.95fr) minmax(0,.8fr);
+      gap:clamp(90px,10vw,160px);
+      align-items:start;
+      margin-bottom:64px;
+    }
+    .lessons-intro-left .eyebrow{
+      margin:0 0 24px;
+      color:var(--green-dark);
+      font-size:.67rem;
+      letter-spacing:.28em;
+    }
+    .lessons-intro-left h2{
+      margin:0;
+      max-width:640px;
+      font-size:clamp(3.25rem,5.2vw,5rem);
+      line-height:.98;
+      letter-spacing:-.035em;
+      color:var(--green-dark);
+    }
+    .lessons-intro-left h2 em{
       display:block;
-      margin-bottom:46px;
-      max-width:720px;
+      font-style:italic;
+      font-weight:400;
     }
-    .lessons-intro .eyebrow{
-      margin:0 0 16px;
-      color:#6a776f;
-    }
-    .lessons-intro-copy h2{
-      margin:0 0 18px;
-      max-width:650px;
-      font-size:clamp(2.45rem,4vw,3.75rem);
-      line-height:1;
-      letter-spacing:-.025em;
-      color:var(--green);
+    .lessons-intro-copy{
+      padding-top:64px;
+      max-width:430px;
     }
     .lessons-intro-copy p{
       margin:0;
-      max-width:610px;
-      font-size:.98rem;
-      line-height:1.65;
-      color:#5f6d65;
+      font-size:1rem;
+      line-height:1.7;
+      color:#637069;
     }
-    #lessons .grid{
+    .lesson-options{
       display:grid;
       grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:42px;
+      gap:72px;
       margin-top:0;
     }
-    #lessons .card{
-      min-height:0;
-      padding:22px 0 0;
-      border-top:1px solid rgba(49,76,64,.26);
-      background:transparent;
+    .lesson-option{
+      border-top:1px solid rgba(49,76,64,.4);
+      padding-top:24px;
+    }
+    .lesson-meta{
       display:flex;
-      flex-direction:column;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:24px;
+      margin-bottom:42px;
     }
     .lesson-number{
-      margin:0 0 22px;
-      font-size:.7rem;
-      font-weight:700;
-      letter-spacing:.18em;
-      color:#748078;
-    }
-    #lessons .card h3{
-      margin:0 0 14px;
-      font-size:clamp(1.55rem,2.2vw,2.05rem);
-      color:var(--green);
-    }
-    #lessons .card > p:not(.price):not(.small):not(.lesson-number){
       margin:0;
-      max-width:430px;
-      color:#5d6a63;
-      line-height:1.6;
-      font-size:.96rem;
-    }
-    #lessons .price{
-      margin:28px 0 8px;
       font-family:Georgia,"Times New Roman",serif;
-      font-size:2.45rem;
-      font-weight:500;
-      letter-spacing:-.02em;
+      font-style:italic;
+      font-size:1rem;
+      color:var(--green-dark);
     }
-    #lessons .small{
+    .lesson-duration{
+      margin:2px 0 0;
+      font-size:.78rem;
+      color:#738078;
+      white-space:nowrap;
+    }
+    .lesson-option h3{
+      margin:0 0 22px;
+      font-size:clamp(2.15rem,3vw,3rem);
+      color:var(--green-dark);
+      line-height:1.02;
+    }
+    .lesson-description{
       margin:0;
-      line-height:1.5;
-      color:#65736b;
+      max-width:500px;
+      font-size:.98rem;
+      line-height:1.75;
+      color:#66726b;
+    }
+    .lesson-price-row{
+      display:flex;
+      align-items:flex-end;
+      gap:20px;
+      margin-top:58px;
+    }
+    .lesson-price{
+      margin:0;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(3.4rem,5vw,4.9rem);
+      font-weight:500;
+      line-height:.88;
+      letter-spacing:-.035em;
+      color:var(--green-dark);
+    }
+    .lesson-price-note{
+      margin:0 0 4px;
+      font-size:.78rem;
+      line-height:1.55;
+      color:#617067;
+    }
+    .lesson-enquire{
+      display:inline-flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+      min-width:245px;
+      margin-top:46px;
+      padding:0 0 8px;
+      border-bottom:1px solid rgba(49,76,64,.45);
+      text-decoration:none;
       font-size:.9rem;
+      color:var(--green-dark);
+    }
+    .lesson-enquire::after{
+      content:"↗";
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:1.45rem;
+      line-height:1;
+    }
+    .lesson-footnote{
+      margin:54px 0 0;
+      font-size:.77rem;
+      line-height:1.6;
+      color:#68756d;
     }
 
     .faq{
@@ -774,13 +832,21 @@
       .court-illustration svg{width:min(100%,270px)}
       .coach-content{grid-template-columns:1fr;gap:26px}
       .coach-photo{width:min(210px,64vw)}
-      #lessons{padding-top:58px;padding-bottom:64px}
-      .lessons-intro{margin-bottom:34px}
-      .lessons-intro-copy h2{font-size:clamp(2.45rem,11vw,3.7rem);margin-bottom:18px}
-      #lessons .grid{grid-template-columns:1fr;gap:30px}
-      #lessons .card{min-height:0;padding:20px 0 0}
 
     
+      #lessons{padding-top:56px;padding-bottom:58px}
+      #lessons .wrap{width:min(100% - 32px,1290px)}
+      .lessons-intro{grid-template-columns:1fr;gap:24px;margin-bottom:46px}
+      .lessons-intro-left h2{font-size:clamp(2.8rem,13vw,4.2rem)}
+      .lessons-intro-copy{padding-top:0;max-width:none}
+      .lesson-options{grid-template-columns:1fr;gap:46px}
+      .lesson-meta{margin-bottom:30px}
+      .lesson-option h3{font-size:2.2rem}
+      .lesson-price-row{margin-top:36px}
+      .lesson-price{font-size:3.6rem}
+      .lesson-enquire{margin-top:34px;min-width:0;width:100%}
+      .lesson-footnote{margin-top:42px}
+
       #contact{padding-top:58px;padding-bottom:58px}
       #contact .contact-grid{grid-template-columns:1fr;gap:42px}
       #contact .contact-grid > div:last-child{padding-left:0;padding-top:0}
@@ -889,30 +955,50 @@
     <section id="lessons">
       <div class="wrap">
         <div class="lessons-intro">
-          <p class="eyebrow">The lessons</p>
+          <div class="lessons-intro-left">
+            <p class="eyebrow">The lessons</p>
+            <h2>Your pace.<em>Your kind of lesson.</em></h2>
+          </div>
           <div class="lessons-intro-copy">
-            <h2>Your pace. Your kind of lesson.</h2>
-            <p>Choose an hour for yourself or share the experience with a partner or friend. Both formats are designed with adult beginners in mind, with clear coaching, time to practise and no pressure.</p>
+            <p>Choose an hour to yourself, or share the experience with a partner or friend. Both formats are designed with adult beginners in mind.</p>
           </div>
         </div>
 
-        <div class="grid">
-          <article class="card">
-            <p class="lesson-number">01</p>
+        <div class="lesson-options">
+          <article class="lesson-option">
+            <div class="lesson-meta">
+              <p class="lesson-number">01</p>
+              <p class="lesson-duration">60 minutes · One person</p>
+            </div>
             <h3>One-to-one</h3>
-            <p>Individual coaching shaped around you, with plenty of time to practise, ask questions and build confidence at your own pace.</p>
-            <p class="price"><span class="currency">£</span><span class="digits">28</span></p>
-            <p class="small">1 hour · court hire &amp; equipment included</p>
+            <p class="lesson-description">Time and attention just for you. Work through the basics at a comfortable pace, with space to ask questions and practise.</p>
+
+            <div class="lesson-price-row">
+              <p class="lesson-price">£28</p>
+              <p class="lesson-price-note">per one-hour<br>lesson</p>
+            </div>
+
+            <a class="lesson-enquire" href="mailto:alexlawrencetennis@gmail.com?subject=One-to-one%20lesson%20enquiry">Enquire about individual lessons</a>
           </article>
 
-          <article class="card">
-            <p class="lesson-number">02</p>
+          <article class="lesson-option">
+            <div class="lesson-meta">
+              <p class="lesson-number">02</p>
+              <p class="lesson-duration">60 minutes · Two people</p>
+            </div>
             <h3>Learn together</h3>
-            <p>Share the lesson with a partner or friend and learn together at a comfortable pace, while still getting plenty of individual guidance.</p>
-            <p class="price"><span class="currency">£</span><span class="digits">35</span></p>
-            <p class="small">1 hour · total for two people · court hire &amp; equipment included</p>
+            <p class="lesson-description">Bring your partner or a friend. Learn alongside each other and enjoy a shared lesson, with coaching for both of you.</p>
+
+            <div class="lesson-price-row">
+              <p class="lesson-price">£35</p>
+              <p class="lesson-price-note">total for two<br>per one-hour lesson</p>
+            </div>
+
+            <a class="lesson-enquire" href="mailto:alexlawrencetennis@gmail.com?subject=Shared%20lesson%20enquiry">Enquire about shared lessons</a>
           </article>
         </div>
+
+        <p class="lesson-footnote">Prices are per one-hour lesson. Shared lessons are £35 for two people (£17.50 each). Court hire and equipment are included.</p>
       </div>
     </section>
 
