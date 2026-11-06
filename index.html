@@ -46,7 +46,7 @@
       color:#D9E9A8;
       text-align:center;
       padding:8px 18px;
-      font-size:.9rem;
+      font-size:.84rem;
       line-height:1.55;
     }
     .launch-banner strong{font-weight:700;letter-spacing:.025em}
@@ -300,7 +300,7 @@
       display:flex;
       flex-direction:column;
       min-width:0;
-      width:min(100%,455px);
+      width:min(100%,490px);
       height:calc(100% - 42px);
       max-height:680px;
       justify-self:start;
@@ -316,17 +316,17 @@
       z-index:0;
     }
     .hero-court-panel::before{
-      left:-42%;
+      left:-46%;
       top:18%;
-      width:190%;
+      width:200%;
       height:22%;
       transform:rotate(24deg);
       transform-origin:left center;
     }
     .hero-court-panel::after{
-      left:-38%;
+      left:-44%;
       bottom:18%;
-      width:185%;
+      width:195%;
       height:20%;
       transform:rotate(24deg);
       transform-origin:left center;
@@ -403,19 +403,19 @@
 
     .dark .button:hover{background:var(--white);color:var(--green)}
     .coach-strip{
-      background:var(--cream);
+      background:var(--green);
       border-top:0;
       border-bottom:0;
-      padding:54px 0 58px;
+      padding:42px 0 50px;
     }
     .coach-content{
       display:grid;
-      grid-template-columns:180px minmax(0,780px);
-      gap:42px;
+      grid-template-columns:200px minmax(0,800px);
+      gap:44px;
       align-items:center;
     }
     .coach-photo{
-      width:180px;
+      width:200px;
       aspect-ratio:1;
       border-radius:50%;
       overflow:hidden;
@@ -437,28 +437,28 @@
     }
     .coach-note{
       margin:0;
-      max-width:780px;
+      max-width:800px;
     }
     .coach-note .eyebrow{
-      margin-bottom:14px;
+      margin-bottom:16px;
       font-family:Georgia,"Times New Roman",serif;
-      font-size:1.5rem;
+      font-size:1.6rem;
       font-weight:500;
       letter-spacing:0;
       text-transform:none;
-      color:var(--green);
+      color:var(--white);
     }
     .coach-note p{
       margin:0;
       font-family:Arial,Helvetica,sans-serif;
-      font-size:clamp(.92rem,1vw,1.05rem);
-      line-height:1.6;
-      color:var(--ink);
+      font-size:clamp(.94rem,1.02vw,1.08rem);
+      line-height:1.55;
+      color:var(--white);
     }
     #lessons{
       background:#f4efe4;
-      padding-top:72px;
-      padding-bottom:66px;
+      padding-top:62px;
+      padding-bottom:58px;
     }
     #lessons .wrap{
       width:min(1290px,calc(100% - 96px));
@@ -468,18 +468,18 @@
       grid-template-columns:minmax(0,.95fr) minmax(0,.8fr);
       gap:clamp(90px,10vw,160px);
       align-items:start;
-      margin-bottom:64px;
+      margin-bottom:52px;
     }
     .lessons-intro-left .eyebrow{
-      margin:0 0 24px;
+      margin:0 0 20px;
       color:var(--green-dark);
-      font-size:.67rem;
+      font-size:.64rem;
       letter-spacing:.28em;
     }
     .lessons-intro-left h2{
       margin:0;
       max-width:640px;
-      font-size:clamp(3.25rem,5.2vw,5rem);
+      font-size:clamp(2.8rem,4.5vw,4.3rem);
       line-height:.98;
       letter-spacing:-.035em;
       color:var(--green-dark);
@@ -490,31 +490,31 @@
       font-weight:400;
     }
     .lessons-intro-copy{
-      padding-top:64px;
-      max-width:430px;
+      padding-top:52px;
+      max-width:410px;
     }
     .lessons-intro-copy p{
       margin:0;
-      font-size:1rem;
-      line-height:1.7;
+      font-size:.94rem;
+      line-height:1.65;
       color:#637069;
     }
     .lesson-options{
       display:grid;
       grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:72px;
+      gap:60px;
       margin-top:0;
     }
     .lesson-option{
       border-top:1px solid rgba(49,76,64,.4);
-      padding-top:24px;
+      padding-top:20px;
     }
     .lesson-meta{
       display:flex;
       align-items:flex-start;
       justify-content:space-between;
       gap:24px;
-      margin-bottom:42px;
+      margin-bottom:34px;
     }
     .lesson-number{
       margin:0;
@@ -525,33 +525,33 @@
     }
     .lesson-duration{
       margin:2px 0 0;
-      font-size:.78rem;
+      font-size:.74rem;
       color:#738078;
       white-space:nowrap;
     }
     .lesson-option h3{
-      margin:0 0 22px;
-      font-size:clamp(2.15rem,3vw,3rem);
+      margin:0 0 18px;
+      font-size:clamp(1.9rem,2.6vw,2.55rem);
       color:var(--green-dark);
       line-height:1.02;
     }
     .lesson-description{
       margin:0;
       max-width:500px;
-      font-size:.98rem;
-      line-height:1.75;
+      font-size:.92rem;
+      line-height:1.68;
       color:#66726b;
     }
     .lesson-price-row{
       display:flex;
       align-items:flex-end;
       gap:20px;
-      margin-top:58px;
+      margin-top:44px;
     }
     .lesson-price{
       margin:0;
       font-family:Georgia,"Times New Roman",serif;
-      font-size:clamp(3.4rem,5vw,4.9rem);
+      font-size:clamp(3rem,4.4vw,4.2rem);
       font-weight:500;
       line-height:.88;
       letter-spacing:-.035em;
@@ -559,8 +559,8 @@
     }
     .lesson-price-note{
       margin:0 0 4px;
-      font-size:.78rem;
-      line-height:1.55;
+      font-size:.74rem;
+      line-height:1.5;
       color:#617067;
     }
     .lesson-enquire{
@@ -568,8 +568,8 @@
       align-items:center;
       justify-content:space-between;
       gap:24px;
-      min-width:245px;
-      margin-top:46px;
+      min-width:225px;
+      margin-top:36px;
       padding:0 0 8px;
       border-bottom:1px solid rgba(49,76,64,.45);
       text-decoration:none;
@@ -583,8 +583,8 @@
       line-height:1;
     }
     .lesson-footnote{
-      margin:54px 0 0;
-      font-size:.77rem;
+      margin:42px 0 0;
+      font-size:.73rem;
       line-height:1.6;
       color:#68756d;
     }
@@ -830,20 +830,20 @@
       .hero-court-bottom{font-size:2rem}
       .court-illustration{padding:24px 0 18px}
       .court-illustration svg{width:min(100%,270px)}
-      .coach-content{grid-template-columns:1fr;gap:26px}
-      .coach-photo{width:min(210px,64vw)}
+      .coach-content{grid-template-columns:1fr;gap:28px}
+      .coach-photo{width:min(220px,68vw)}
 
     
-      #lessons{padding-top:56px;padding-bottom:58px}
+      #lessons{padding-top:50px;padding-bottom:52px}
       #lessons .wrap{width:min(100% - 32px,1290px)}
       .lessons-intro{grid-template-columns:1fr;gap:24px;margin-bottom:46px}
-      .lessons-intro-left h2{font-size:clamp(2.8rem,13vw,4.2rem)}
+      .lessons-intro-left h2{font-size:clamp(2.5rem,11.5vw,3.7rem)}
       .lessons-intro-copy{padding-top:0;max-width:none}
       .lesson-options{grid-template-columns:1fr;gap:46px}
       .lesson-meta{margin-bottom:30px}
-      .lesson-option h3{font-size:2.2rem}
+      .lesson-option h3{font-size:2rem}
       .lesson-price-row{margin-top:36px}
-      .lesson-price{font-size:3.6rem}
+      .lesson-price{font-size:3.25rem}
       .lesson-enquire{margin-top:34px;min-width:0;width:100%}
       .lesson-footnote{margin-top:42px}
 
